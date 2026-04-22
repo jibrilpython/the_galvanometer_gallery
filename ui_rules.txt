@@ -1,0 +1,42 @@
+1. DESIGN PHILOSOPHY
+Visual: "Laboratory Precision" — the UI draws from the aesthetic of a 19th-century physics laboratory reimagined through a contemporary scientific lens. Think the visual language of a high-end scientific journal or a museum of natural history's digital catalog: clean white space, precise ruled lines, and a sense that every element has been measured twice before being placed. The instruments were built for universities and research institutes — the app should feel like their digital home.
+Mood: scholarly, precise, luminous, specimen-focused, quietly extraordinary.
+Important: No steampunk styling, no dark academia cosplay. These instruments belong in a lit display case, not a haunted study. The UI should feel like natural light through a laboratory window — bright, clear, and honest.
+
+2. COLORS
+#FAFAF8 — Main background (laboratory white, barely warm)
+#141412 — Primary text & high-contrast elements
+#FFFFFF — Secondary panels / card surfaces
+#8C8C88 — Secondary text / muted labels
+#2B5EA7 — Primary accent (galvanometer blue — the color of scientific illustration ink, Wedgwood-adjacent, the blue of a physics textbook diagram)
+#EEECEA — Outline / stroke / dividers
+#C17F24 — Secondary accent (brass instrument gold — used for era tags, manufacturer badges, and material indicators)
+#C0392B — Critical errors only
+Important: Blue is the action and selection color — it references scientific ink, diagram annotation, and the deflection needle on a galvanometer illustration. Gold is purely informational — material, era, provenance. They occupy completely different semantic roles and should never share an element. The overall palette should feel like a well-funded university science department, not a consumer app.
+
+3. TYPOGRAPHY
+Display / Headings: Cormorant (weight 600–700) — a refined, slightly scientific serif. At large sizes it has the elegance of engraved instrument nameplates and the authority of a university press publication. Used exclusively for instrument names on detail views and the app title.
+Body / Descriptions: Inter (weight 300–400) — clean, neutral, precise. For all prose: condition notes, laboratory history, sensitivity specs. Light weight keeps the white space active.
+Monospace / Identifiers: JetBrains Mono — for archive codes like GVG-KELVIN-MIRROR-1878-GBR-CAMBRIDGE-019, resistance values (4,200 Ω), sensitivity specs (10⁻⁹ A/mm), and all structured technical fields. Makes every measurement feel like it came from a laboratory notebook.
+Important: Cormorant is used at 28px and above only — never for body copy, never for labels. Below that threshold everything is Inter or JetBrains Mono. The serif should feel like a chapter heading, not a UI font.
+
+4. SURFACE & TEXTURE LANGUAGE
+
+Backgrounds: flat laboratory white — no grain, no noise, no warmth beyond the barely-there tint
+Cards: pure white with a 1px border at #EEECEA and 10px corner radius — specimen cards, clean and lit
+Deflection arc motif: each list card features a small SVG semicircle — a miniature galvanometer scale showing a needle deflected to indicate the instrument's sensitivity class. High-sensitivity instruments show near-full deflection in blue; low-sensitivity show shallow deflection in gold. This is the primary visual differentiator between entries.
+Resistance badge: each card shows coil resistance in JetBrains Mono — 4,200 Ω, 12 Ω — in a small bordered pill, functioning like a spec plate from the instrument's original box
+Photography: instrument photography centered on white — the coil, mirror, or needle assembly forward. Orthographic where possible, like a scientific illustration rendered in photograph
+University / provenance tag: a blue pill showing the institution or network the instrument came from — Cambridge, Berlin PTR, Smithsonian — using the blue accent at 10% opacity fill with full blue text
+
+
+5. INTERACTION PRINCIPLES
+
+Transitions: 220–260ms ease-out — unhurried but never slow. Like a needle finding its resting position.
+Selected state: blue left-border (3px) + very faint #EEF2FA background tint on active cards
+Empty states: NO INSTRUMENTS IN THIS GALLERY. in JetBrains Mono, centered, muted — one line, no illustration
+Loading: a thin blue arc sweeping like a galvanometer needle deflecting — animated SVG arc at screen top, no spinner
+Navigation: bottom tab bar — four tabs: Gallery, Sensitivity Map, Logbook, Settings. Active tab in blue.
+Sensitivity class filter: a first-class filter chip row — Microammeter class, Milliammeter class, Ballistic, Mirror / optical, Astatic — because that is how collectors mentally organize the field
+
+Important: The deflection arc on each list card is the single most expressive element in the entire app. A fully deflected needle in blue means high sensitivity — a prized, rare instrument. A shallow deflection in gold means robust and common. This visual grammar should be immediately legible to any collector within one session of use, without explanation.
