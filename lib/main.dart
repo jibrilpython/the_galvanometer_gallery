@@ -59,7 +59,7 @@ class MyApp extends ConsumerWidget {
         );
       },
       child:
-          !userProv.firstTimeUser
+          userProv.firstTimeUser
               ? const InitialScreen()
               : const MainNavigation(),
     );
