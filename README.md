@@ -1,8 +1,8 @@
 # The Galvanometer Gallery
 
-Description:The Galvanometer Gallery is a mobile application for collectors of early electrical physics apparatus, historians of laboratory science, and curators of 19th-century measurement technology, dedicated to cataloging the sensitive electromagnetic instruments used to detect and measure electric current before the era of digital multimeters and solid-state sensors.
+Description: The Galvanometer Gallery is a mobile application for collectors of early electrical physics apparatus, historians of laboratory science, and curators of 19th-century measurement technology, dedicated to cataloging the sensitive electromagnetic instruments used to detect and measure electric current before the era of digital multimeters and solid-state sensors.
 
-Systematize your collection of the first windows into the world of electrons—from mirror galvanometers that used light beams to track tiny currents to heavy brass tangent galvanometers used to measure the Earth's magnetic field, from astatic needle pairs to "dead-beat" moving coil movements, from early Wheatstone bridges to gold-leaf electroscopes.
+Systematize your collection of the first windows into the world of electrons — from mirror galvanometers that used light beams to track tiny currents to heavy brass tangent galvanometers used to measure the Earth's magnetic field, from astatic needle pairs to "dead-beat" moving coil movements, from early Wheatstone bridges to gold-leaf electroscopes.
 
 Create a digital archive of scientific discovery by recording the movement type, coil resistance, sensitivity, era, and the laboratory or university history of each specimen.
 
